@@ -151,6 +151,8 @@
                         payment.paymentToken = data.paymentToken;
                         payment.returnUrl = data.returnUrl;
                         payment.transactions = payment_data.transactions;
+                        payment.paymentData = payment_data;
+                        payment.jsonData = JSON.stringify(payment_data, null, 1);
                         // getting buyer's shipping address and email
                         payment.address = payment_data.payer.payer_info.shipping_address;
                         payment.email = payment_data.payer.payer_info.email;
