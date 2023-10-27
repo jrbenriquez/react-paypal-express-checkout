@@ -150,7 +150,7 @@
                         payment.paymentID = data.paymentID;
                         payment.paymentToken = data.paymentToken;
                         payment.returnUrl = data.returnUrl;
-                        payment.transactions = data.transactions;
+                        payment.transactions = payment_data.transactions;
                         // getting buyer's shipping address and email
                         payment.address = payment_data.payer.payer_info.shipping_address;
                         payment.email = payment_data.payer.payer_info.email;
